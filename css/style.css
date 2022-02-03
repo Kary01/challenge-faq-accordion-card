@@ -110,3 +110,16 @@ body {
   color: var(--dark-grayish-blue);
   margin-bottom: 15px;
 }
+
+.card .card__faq .card__faq--details[open] {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: var(--weight-lg);
+}
+
+.card .card__faq .card__faq--details .faq--ask::marker {
+  content: none;
+}
+
+.card .card__faq .card__faq--details .faq--ask::after {
+  content: url('../images/icon-arrow-down.svg');
+}
