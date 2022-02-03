@@ -69,6 +69,12 @@ body {
   left: 50px;
 }
 
+.card .card__upper .image--shadow {
+  position: relative;
+  left: 45px;
+  width: 200px;
+}
+
 .card .card__faq {
   width: 100%;
   height: auto;
@@ -88,5 +94,5 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: 50px 0;
+  margin: 30px 0;
 }
