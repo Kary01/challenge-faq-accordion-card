@@ -38,6 +38,8 @@ body {
   font-family: var(--body-family);
   font-size: var(--body-copy);
   background-image: linear-gradient(180deg, var(--soft-violet), var(--soft-blue));
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #main {
@@ -112,6 +114,10 @@ body {
   justify-content: space-between;
 }
 
+.card .card__faq .card__faq--details .faq--ask:hover {
+  cursor: pointer;
+}
+
 .card .card__faq .card__faq--details .faq--answer {
   color: var(--dark-grayish-blue);
   margin-bottom: 15px;
@@ -132,4 +138,18 @@ body {
 
 .card .card__faq .card__faq--details[open] .faq--ask::after {
   transform: rotate(180deg);
+}
+
+
+#footer {
+  color: var(--very-dark-grayish-blue);
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: var(--very-dark-desaturated-blue); 
 }
