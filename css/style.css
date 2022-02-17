@@ -59,13 +59,17 @@ body {
 
 .card .card__upper {
   width: 100%;
-  height: 100px;
+  height: auto;
 }
 
 .card .card__upper .card__upper--hero {
   width: 300px;
   height: 100px;
   position: absolute;
+}
+
+.card .card__upper .image--box {
+  display: none;
 }
 
 .card .card__upper .image--pattern {
@@ -164,7 +168,7 @@ body {
   color: var(--very-dark-desaturated-blue); 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   #main {
     margin: 0;
   }
@@ -180,7 +184,7 @@ body {
     width: 100%;
     height: 400px;
     position: relative;
-    bottom: 145px;
+    bottom: -72px;
     left: -56px;
     display: block;
   }
@@ -189,8 +193,15 @@ body {
     width: 350px;
     height: 350px;
     position: relative;
-    bottom: 130px;
+    bottom: -73px;
     left: -50px;
+  }
+  .card .card__upper .image--box {
+    position: relative;
+    display: block;
+    top: -193px;
+    left: -75px;
+    width: 150px;
   }
   .card .card__upper .image--shadow {
     display: none;
@@ -200,5 +211,8 @@ body {
   }
   .card .card__faq .card_faq--title {
     align-self: start;
+  }
+  .card .card__faq .card__faq--division {
+  font-size: 1.4rem;
   }
 }
