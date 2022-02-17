@@ -68,7 +68,11 @@ body {
   position: absolute;
 }
 
-.card .card__upper .card__upper--hero img {
+.card .card__upper .card__upper--hero .card__upper--image {
+  background-image: url('../images/illustration-woman-online-mobile.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 200px;
   height: 200px;
   position: relative;
@@ -154,4 +158,36 @@ body {
 
 .attribution a { 
   color: var(--very-dark-desaturated-blue); 
+}
+
+@media screen and (min-width: 600px) {
+  #main {
+    margin: 0;
+  }
+  .card {
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .card .card__upper .image--pattern {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    bottom: 145px;
+    left: -96px;
+  }
+  .card .card__upper .card__upper--hero .card__upper--image {
+    background-image: url('../images/illustration-woman-online-desktop.svg');
+    width: 350px;
+    height: 350px;
+    position: relative;
+    bottom: 130px;
+    left: -50px;
+  }
+  .card .card__upper .image--shadow {
+    display: none;
+  }
 }
